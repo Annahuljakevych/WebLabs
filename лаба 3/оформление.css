@@ -1,0 +1,67 @@
+body {
+    font-family: 'Calibri';
+    font-size: 20px;
+    color: #48D1CC;
+    background-color: #000000;
+    position: center;
+    padding: 35 px;
+
+}
+
+
+.header {
+    padding: 35px;
+    align-items: center;
+
+
+}
+
+.nav__link {
+    color: #48D1CC;
+    font-weight: 700; /*bold*/
+    font-size: 30px;
+ margin: 0 47% 0 ;
+
+}
+
+.content {
+    width: 70%;
+    align-items: center;
+    text-align: center;
+ margin: 0 15% 0 ;
+
+}
+
+
+.footer{
+    width: 100%;
+    padding: 1%;
+    background-color: #D3D3D3;
+text-align: center;
+}
+
+.footer__link{
+    display: flex;
+    justify-content: space-between;
+margin: 0 40% 0 ;
+
+}
+
+.video_content{
+
+    align-content: center;
+    margin: 0 0 0 28.75%;
+}
+
+.music_content{
+
+    margin: 22% 0 0 0;
+
+}
+
+.footer_media{
+    width: 100%;
+    padding: 1%;
+    background-color: #48D1CC;
+
+}
