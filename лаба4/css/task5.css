@@ -1,0 +1,22 @@
+#rectangle5 {
+    width: 400px;
+    height: 200px;
+    background: blue;
+    transition: transform 2s, ease-in-out;
+    animation-name: colors;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colors {
+    0% {
+        transform: scale(2);
+        background-color: black;
+    }
+
+    100% {
+        transform: scale(1.5) translate(0, 200px) rotate(360deg);
+        background-color: hotpink;
+    }
+}

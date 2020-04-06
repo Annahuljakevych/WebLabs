@@ -1,0 +1,227 @@
+body {
+    background: gray;
+}
+
+.List1 {
+    background-color: #ffc4d8;
+    border-left: 8px solid #740434;
+    color: #49152c;
+    padding: 30px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgb(41, 3, 31);
+}
+
+
+footer {
+    color: rgb(54, 2, 47);
+}
+#rectangle {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background: rgb(0, 148, 255);
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+.fig1:hover {
+    transition: transform 3s;
+    transform: scale(1.5);
+}
+
+
+#rectangle1 {
+    width: 200px;
+    height: 200px;
+    background: black;
+    transform: rotateZ(45deg);
+    transition-duration: 2s;
+}
+#circle {
+    width: 250px;
+    height: 250px;
+    background: violet;
+    border-radius: 50%;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier();
+}
+
+    #circle:hover {
+        transform: translate(250%);
+        width: 100px;
+        height: 100px;
+        border-radius: 10%;
+    }
+#rectangle2 {
+    width: 200px;
+    height: 200px;
+    animation: infinite colorswitch 3s;
+}
+
+@keyframes colorswitch {
+    0% {
+        background-color: whitesmoke;
+    }
+
+    6% {
+        background-color: lightpink;
+    }
+
+    50% {
+        background-color: hotpink;
+    }
+
+    94% {
+        background-color: deeppink;
+    }
+
+    100% {
+        background-color: blueviolet;
+    }
+}
+#rectangle5 {
+    width: 400px;
+    height: 200px;
+    background: blue;
+    transition: transform 2s, ease-in-out;
+    animation-name: colors;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colors {
+    0% {
+        transform: scale(0.5);
+        background-color: black;
+    }
+
+    100% {
+        transform: scale(1.2) translate(0, 200px) rotate(360deg);
+        background-color: hotpink;
+    }
+}
+
+#flex-div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vw;
+    width: 70%;
+    margin-bottom: 10vh;
+}
+
+    #flex-div > div {
+        margin: auto;
+    }
+
+#flex-top1 {
+    width: 35%;
+    height: 33%;
+    background: rgb(255, 192, 234);
+}
+
+#flex-top2 {
+    width: 20%;
+    height: 33%;
+    background: violet;
+}
+
+#flex-top3 {
+    width: 45%;
+    height: 33%;
+    background: rgb(178, 0, 255);
+}
+
+#flex-mid1 {
+    width: 50%;
+    height: 34%;
+    background: #E7337A;
+}
+
+#flex-mid2 {
+    width: 50%;
+    height: 34%;
+    background: lightpink;
+}
+
+#flex-bot1 {
+    width: 90%;
+    height: 33%;
+    background: hotpink;
+}
+
+#flex-bot2 {
+    width: 10%;
+    height: 33%;
+    background: rgb(54, 2, 47);
+}
+
+#grid-div {
+    height: 30vw;
+    width: 70vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 45% 5% 10% 40%;
+    grid-template-rows: 10% 35% 20% 20% 15%;
+}
+
+    #grid-div > div {
+        margin: 0;
+    }
+
+#grid1 {
+    grid-column: 1/3;
+    grid-row: 1 / 2;
+    background-color: cadetblue;
+}
+
+#grid2 {
+    grid-column: 3/5;
+    grid-row: 1 / 2;
+    background-color: deepskyblue;
+}
+
+#grid3 {
+    grid-column: 1/2;
+    grid-row: 2 / 3;
+    background-color: cornflowerblue;
+}
+
+#grid4 {
+    grid-column: 1/2;
+    grid-row: 3 / 4;
+    background-color: royalblue;
+}
+
+#grid5 {
+    grid-column: 1/2;
+    grid-row: 4 / 6;
+    background-color: slateblue;
+}
+
+#grid6 {
+    grid-column: 2/4;
+    grid-row: 2 / 6;
+    background-color: blueviolet;
+}
+
+#grid7 {
+    grid-column: 4/5;
+    grid-row: 2 / 4;
+    background-color: mediumblue;
+}
+
+#grid8 {
+    grid-column: 4/5;
+    grid-row: 4 / 5;
+    background-color: lightsteelblue;
+}
+
+#grid9 {
+    grid-column: 4/5;
+    grid-row: 5 / 6;
+    background-color: darkblue;
+}

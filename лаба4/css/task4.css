@@ -1,0 +1,27 @@
+#rectangle2 {
+    width: 200px;
+    height: 200px;
+    animation: infinite colorswitch 3s;
+}
+
+@keyframes colorswitch {
+    0% {
+        background-color: whitesmoke;
+    }
+
+    6% {
+        background-color: lightpink;
+    }
+
+    50% {
+        background-color: hotpink;
+    }
+
+    94% {
+        background-color: deeppink;
+    }
+
+    100% {
+        background-color: blueviolet;
+    }
+}

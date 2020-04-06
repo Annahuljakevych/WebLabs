@@ -1,0 +1,13 @@
+#rectangle {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background: rgb(0, 148, 255);
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+.fig1:hover {
+    transition: transform 3s;
+    transform: scale(1.5);
+}
