@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time-wrapper {
+    text-align: center;
+}
+
+    #time-wrapper h3 {
+        display: inline-block;
+    }
+
+#time {
+    font-size: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    background-color: #00ffff
+}
+
+th {
+    background-color: #0094ff;
+    color: purple;
+}
