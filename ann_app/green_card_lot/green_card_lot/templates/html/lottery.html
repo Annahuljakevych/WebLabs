@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+	p {
+		margin: 1em; 
+	}
+
+	#reg_link {
+		padding: 0.5em;
+		border-radius: 1em;
+		background: #0f0;
+	}
+</style>
+
+<p>{{lang_pack.global_text}}</p>
+{% if not login %}
+	<a id="reg_link" href="{% url 'green_card:register' %}">{{lang_pack.register}}</a>
+{% endif %}
+
+{% endblock %}

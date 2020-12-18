@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style type="text/css">
+	#win  {
+		display: flex;
+		align-items: center;
+		font-size: 2em;
+	}
+</style>
+
+<div id="win">
+	{{lang_pack.winner}}: {{winner}}
+</div>
+
+
+{% endblock %}

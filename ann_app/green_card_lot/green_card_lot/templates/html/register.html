@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style type="text/css">
+	form  {
+		margin: 1em;
+	}
+</style>
+
+<form action="{% url 'green_card:create' %}" method="POST">{% csrf_token %}
+	{{lang_pack.login}}:<br>
+	<input type="text" required maxlength="100" name="login"><br>
+	{{lang_pack.password}}:<br>
+	<input type="text" required maxlength="100" name="password"><br>
+	{{lang_pack.form_01}}<br>
+	<textarea required="" maxlength="400" name="form_01" cols="50"></textarea><br>
+	{{lang_pack.form_02}}<br>
+	<textarea required="" maxlength="400" name="form_02" cols="50"></textarea><br>
+	{{lang_pack.form_03}}<br>
+	<textarea required="" maxlength="400" name="form_03" cols="50"></textarea><br>
+	{{lang_pack.form_04}}<br>
+	<textarea required="" maxlength="400" name="form_04" cols="50"></textarea><br>
+	{{lang_pack.form_05}}<br>
+	<textarea required="" maxlength="400" name="form_05" cols="50"></textarea><br>
+	{{lang_pack.form_06}}<br>
+	<textarea required="" maxlength="400" name="form_06" cols="50"></textarea><br>
+	{{lang_pack.form_07}}<br>
+	<textarea required="" maxlength="400" name="form_07" cols="50"></textarea><br>
+	{{lang_pack.form_08}}<br>
+	<textarea required="" maxlength="400" name="form_08" cols="50"></textarea><br>
+	{{lang_pack.form_09}}<br>
+	<textarea required="" maxlength="400" name="form_09" cols="50"></textarea><br>
+	{{lang_pack.form_10}}<br>
+	<textarea required="" maxlength="400" name="form_10" cols="50"></textarea><br>
+	{{lang_pack.form_11}}<br>
+	<textarea required="" maxlength="400" name="form_11" cols="50"></textarea><br>
+	{{lang_pack.form_12}}<br>
+	<textarea required="" maxlength="400" name="form_12" cols="50"></textarea><br>
+	{{lang_pack.form_13}}<br>
+	<textarea required="" maxlength="400" name="form_13" cols="50"></textarea><br>
+	<button type="submit">{{lang_pack.register}}</button>
+</form>
+
+{% endblock %}

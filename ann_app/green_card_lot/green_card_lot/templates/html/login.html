@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style type="text/css">
+	form  {
+		margin: 1em;
+	}
+</style>
+
+<form action="{% url 'green_card:check' %}" method="POST">{% csrf_token %}
+	{{lang_pack.login}}:<br>
+	<input type="text" required maxlength="100" name="login"><br>
+	{{lang_pack.password}}:<br>
+	<input type="text" required maxlength="100" name="password"><br>
+	<button type="submit">{{lang_pack.log_in}}</button>
+</form>
+
+{% endblock %}

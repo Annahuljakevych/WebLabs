@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock %}</title>
+	<style type="text/css">
+
+		body {
+			margin: 0;
+			background: #eef;
+			font-family: calibri;
+		}
+
+		::-webkit-scrollbar {
+			width: 1vh;
+			height: 1vh;
+			/*position: fixed;*/
+		}
+
+		::-webkit-scrollbar-track {
+			background: #444;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: #888;
+		}
+
+		#header {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			border-bottom: 1px solid #000;
+			/*background: rgb(20,20,20);*/
+		}
+
+		#header > a, #header > div {
+			border-radius: 1em;
+			font-size: 1em;
+			padding: 0.5em;
+			margin: 0.5em;
+			border: 1px solid #000;
+		}
+
+		a {
+			color: #000;
+			text-decoration: none;
+			border-radius: 1em;
+			font-size: 1em;
+			padding: 0.5em;
+			margin: 0.5em;
+			border: 1px solid #000;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		{% if lang_pack %}
+			<a href="{% url 'green_card:index' %}">{{lang_pack.home}}</a>
+			<a href="{% url 'green_card:get_winner' %}">{{lang_pack.winner}}</a>
+			{% if login %}
+				<div>{{lang_pack.user}}: {{login.login}}</div>
+				<a href="{% url 'green_card:log_out' %}">{{lang_pack.log_out}}</a>
+			{% else %}
+				<a href="{% url 'green_card:log_in' %}">{{lang_pack.log_in}}</a>
+				<a href="{% url 'green_card:register' %}">{{lang_pack.register}}</a>
+			{% endif %}
+			<a href="/admin">{{lang_pack.admin}}</a>
+			
+			<a href="{% url 'green_card:set_rus' %}">РУС</a>
+			<a href="{% url 'green_card:set_uzb' %}">УЗБ</a>
+			<a href="{% url 'green_card:set_tadz' %}">ТАДЖ</a>
+		{% else %}
+			<font color="#f00">ERROR</font>
+		{% endif %}
+	</div>
+	{% block content %}{% endblock %}
+</body>
+</html>
